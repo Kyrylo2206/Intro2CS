@@ -1,13 +1,11 @@
-plan = ["going to university", "reading books", "doing sports", "eating meals", "playing games"]
-print(plan[0])
-print(plan[4])
-print(plan[1:4])
-print(plan[::-1])
-plan[1] = "sleeping"
-print(plan)
-plan.insert(0, "going to the shop")
-plan.append("doing homework")
-plan.remove("eating meals")
-weekend = ["walking", "relaxing"]
-plan.extend(weekend)
-print(plan)
+city = ("Kharkiv", "Ukraine", 49.9935, 36.2304)
+print(city[1])
+print(city[3])
+print(type(city))
+name, country, latitude, longitude = city
+print(name)
+print(country)
+city_list = list(city)
+city_list[1] = "Poland"
+city = tuple(city_list)
+print(city)
