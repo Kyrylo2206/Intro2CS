@@ -1,6 +1,11 @@
-mine = {"pizza", "pasta", "salad", "sandwich", "fries"}
-friend = {"burger", "fries", "salad", "sushi", "pizza"}
-print("All foods:", mine | friend)
-print("Food we both like:", mine & friend)
-print("Food  only I like:", mine - friend)
-print("Food only one of us likes:", mine ^ friend)
+words = {"apple" : "jabłko", "orange" : "pomarańcza", "book": "książka", "table": "stół"}
+print("The translation of orange:" , words["orange"])
+print("Number of pairs:", len(words))
+words["cat"] = "kot"
+words["book"] = "książeczka"
+print("Updated dictionary:", words)
+words.update({"water": "woda", "sun": "słońce"})
+print("Dictionary with two new words:", words)
+print("Keys:", list(words.keys()))
+print("Values:", list(words.values()))
+print("Pairs:", list(words.items()))
