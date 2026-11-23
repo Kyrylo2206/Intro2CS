@@ -1,14 +1,10 @@
-language = "German" 
-if language == "English":
-    print("Hello")
-elif language == "Polish":
-    print("Dzień dobry")
-elif language == "German":
-    print("Hallo")
-elif language == "Spanish":
-    print("Hola")
-elif language == "Ukrainian":
-    print("Привіт")
+word = "play"
+irregular_plurals = {"child" : "children", "mouse" : "mice"}
+if word in irregular_plurals:
+    print(irregular_plurals[word])
+elif word[-1] in ("s", "x", "z"):
+    print(word + "es")
+elif word[-1] == "y" and word[-2] not in ("a", "e", "i", "o", "u"):
+    print(word[:-1] + "ies")
 else:
-    print("I don't know this language yet.")
-
+    print(word + "s")
