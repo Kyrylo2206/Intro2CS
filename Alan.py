@@ -1,13 +1,14 @@
-age = 20
-if age < 12:
-    print("Child ticket")
+language = "German" 
+if language == "English":
+    print("Hello")
+elif language == "Polish":
+    print("Dzień dobry")
+elif language == "German":
+    print("Hallo")
+elif language == "Spanish":
+    print("Hola")
+elif language == "Ukrainian":
+    print("Привіт")
 else:
-    print("Adult ticket")
-if_student = True
-if if_student:
-    print("Student discount")
-day = "Mon"
-if day == "Sat":
-    print("Weekend price")
-else:
-    print("Weekday price")
+    print("I don't know this language yet.")
+
